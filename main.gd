@@ -33,7 +33,7 @@ func _ready():
 	pendulum.L = b
 	pendulum.updatePhi(pendulum.phi)
 	VelocitySet.text = String(c)
-	pendulum.phi_first = c / pendulum.L
+	pendulum.phi_first = - c / pendulum.L
 	DampSet.text = String(d)
 	pendulum.gamma = d
 

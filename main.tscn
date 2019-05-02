@@ -88,41 +88,41 @@ text = "w"
 script = ExtResource( 6 )
 
 [node name="CtrlHUD" type="HBoxContainer" parent="."]
-editor/display_folded = true
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -288.0
 margin_bottom = 80.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CtrlHUD"]
+[node name="Buttons" type="VBoxContainer" parent="CtrlHUD"]
+editor/display_folded = true
 margin_right = 116.0
 margin_bottom = 108.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CtrlHUD/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CtrlHUD/Buttons"]
 margin_right = 116.0
 margin_bottom = 20.0
 
-[node name="StartStop" type="Button" parent="CtrlHUD/VBoxContainer/HBoxContainer"]
+[node name="StartStop" type="Button" parent="CtrlHUD/Buttons/HBoxContainer"]
 margin_right = 50.0
 margin_bottom = 20.0
 toggle_mode = true
 text = "START"
 script = ExtResource( 7 )
 
-[node name="HSeparator" type="HSeparator" parent="CtrlHUD/VBoxContainer/HBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="CtrlHUD/Buttons/HBoxContainer"]
 margin_left = 54.0
 margin_right = 57.0
 margin_bottom = 20.0
 custom_styles/separator = SubResource( 2 )
 
-[node name="Reset" type="Button" parent="CtrlHUD/VBoxContainer/HBoxContainer"]
+[node name="Reset" type="Button" parent="CtrlHUD/Buttons/HBoxContainer"]
 margin_left = 61.0
 margin_right = 109.0
 margin_bottom = 20.0
 text = "RESET"
 script = ExtResource( 8 )
 
-[node name="HSeparator2" type="HSeparator" parent="CtrlHUD/VBoxContainer/HBoxContainer"]
+[node name="HSeparator2" type="HSeparator" parent="CtrlHUD/Buttons/HBoxContainer"]
 margin_left = 113.0
 margin_right = 116.0
 margin_bottom = 20.0
