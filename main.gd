@@ -27,7 +27,7 @@ func _ready():
 	var c = config.get_value(section, "v_0", v_0)
 	var d = config.get_value(section, "gamma", gamma)
 	
-	angleSet.text = String(stepify(a * 180 / PI, 0.01))
+	angleSet.text = String(stepify(- a * 180 / PI, 0.01))
 	pendulum.phi = a
 	LengthSet.text = String(b)
 	pendulum.L = b

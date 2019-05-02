@@ -182,7 +182,6 @@ margin_bottom = 96.0
 text = "µ = "
 
 [node name="Settings" type="VBoxContainer" parent="CtrlHUD"]
-editor/display_folded = true
 margin_left = 174.0
 margin_right = 232.0
 margin_bottom = 108.0
