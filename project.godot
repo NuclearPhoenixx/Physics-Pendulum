@@ -20,10 +20,6 @@ run/main_scene="res://main.tscn"
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
-[debug]
-
-settings/stdout/print_fps=true
-
 [display]
 
 window/dpi/allow_hidpi=true
@@ -33,6 +29,5 @@ window/dpi/allow_hidpi=true
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=1
-quality/shading/force_vertex_shading=true
-quality/filters/use_nearest_mipmap_filter=true
+environment/default_clear_color=Color( 0.164706, 0.164706, 0.164706, 1 )
 environment/default_environment="res://default_env.tres"
