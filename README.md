@@ -12,7 +12,7 @@ You can also set the boundary values for the pendulum which are:
 * Initial angle, ``phi_0`` [°]; arbitrary.
 * Pendulum length, ``L`` [m]; L > 0.
 * Initial (tip) velocity, ``v_0`` [m/s]; arbitrary.
-* Damping constant, ``µ`` []; µ > 0.
+* Damping constant, ``µ`` [ ]; µ >= 0.
 
 The program auto-saves all your set config parameters to a file called ``user.cfg`` in the current file path. This way all the parameters are reloaded if you start the simulation or reset it.
 
