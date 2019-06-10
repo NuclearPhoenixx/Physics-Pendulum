@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://pendulum.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://gui/set_length.gd" type="Script" id=10]
 [ext_resource path="res://gui/set_velocity.gd" type="Script" id=11]
 [ext_resource path="res://gui/set_damp.gd" type="Script" id=12]
+[ext_resource path="res://gui/graph.gd" type="Script" id=13]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.97351, 1 )
@@ -62,6 +63,7 @@ text = "Time: 0 s"
 script = ExtResource( 3 )
 
 [node name="Angle" type="Label" parent="StatHUD"]
+pause_mode = 2
 margin_top = 18.0
 margin_right = 59.0
 margin_bottom = 32.0
@@ -69,6 +71,7 @@ text = "phi"
 script = ExtResource( 4 )
 
 [node name="Velocity" type="Label" parent="StatHUD"]
+pause_mode = 2
 margin_top = 36.0
 margin_right = 59.0
 margin_bottom = 50.0
@@ -76,6 +79,7 @@ text = "v"
 script = ExtResource( 5 )
 
 [node name="AngularV" type="Label" parent="StatHUD"]
+pause_mode = 2
 margin_top = 54.0
 margin_right = 59.0
 margin_bottom = 68.0
@@ -83,6 +87,8 @@ text = "w"
 script = ExtResource( 6 )
 
 [node name="CtrlHUD" type="HBoxContainer" parent="."]
+pause_mode = 2
+editor/display_folded = true
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -288.0
@@ -94,6 +100,7 @@ margin_right = 116.0
 margin_bottom = 108.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CtrlHUD/Buttons"]
+editor/display_folded = true
 margin_right = 116.0
 margin_bottom = 20.0
 
@@ -177,6 +184,7 @@ margin_bottom = 96.0
 text = "µ = "
 
 [node name="Settings" type="VBoxContainer" parent="CtrlHUD"]
+editor/display_folded = true
 margin_left = 174.0
 margin_right = 232.0
 margin_bottom = 108.0
@@ -206,6 +214,20 @@ margin_top = 84.0
 margin_right = 58.0
 margin_bottom = 108.0
 script = ExtResource( 12 )
+
+[node name="Container" type="MarginContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -15.0
+margin_top = -55.0
+
+[node name="Graph" type="Line2D" parent="Container"]
+width = 2.0
+default_color = Color( 0.231373, 0.356863, 1, 1 )
+texture_mode = 1063256064
+script = ExtResource( 13 )
 [connection signal="text_entered" from="CtrlHUD/Settings/Angle" to="CtrlHUD/Settings/Angle" method="_on_Angle_text_entered"]
 [connection signal="text_entered" from="CtrlHUD/Settings/Length" to="CtrlHUD/Settings/Length" method="_on_Length_text_entered"]
 [connection signal="text_entered" from="CtrlHUD/Settings/Velocity" to="CtrlHUD/Settings/Velocity" method="_on_Velocity_text_entered"]
