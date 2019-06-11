@@ -16,10 +16,8 @@ You can also set the boundary values for the pendulum which are:
 
 The program auto-saves all your set config parameters to a file called ``settings.cfg`` in the user directory (AppData). This way all the parameters are reloaded if you start the simulation or reset it.
 
-On the top left corner you can also find some stats to your pendulum motion such as angle, tip velocity, angular velocity and time.
+On the top left corner you can also find some stats to your pendulum motion such as angle, tip velocity, angular velocity and time. Furthermore, you can find the harmonic graph being drawn as the pendulum is oscillating on the bottom of the screen.
 
 ---
-
-_-> Please note that this is still somewhat work in progress and probably contains some bugs. However, the main functions are all already implemented so there is that._
 
 _This should run in pretty much any browser, but if it doesn't try to download the source code and give it a try in Godot OR create an issue._
