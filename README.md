@@ -14,7 +14,7 @@ You can also set the boundary values for the pendulum which are:
 * Initial (tip) velocity, ``v_0`` [m/s]; arbitrary.
 * Damping constant, ``µ`` [ ]; µ >= 0.
 
-The program auto-saves all your set config parameters to a file called ``user.cfg`` in the current file path. This way all the parameters are reloaded if you start the simulation or reset it.
+The program auto-saves all your set config parameters to a file called ``settings.cfg`` in the user directory (AppData). This way all the parameters are reloaded if you start the simulation or reset it.
 
 On the top left corner you can also find some stats to your pendulum motion such as angle, tip velocity, angular velocity and time.
 

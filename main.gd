@@ -2,7 +2,7 @@ extends Control
 
 # STANDARD VALUES
 onready var config = ConfigFile.new()
-var path = "res://user.cfg"
+var path = "user://settings.cfg"
 var section = "Initial Values"
 
 # GET NODES INIT
