@@ -4,4 +4,4 @@ onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pe
 
 # UPDATE ANGLE OF PHI IN DEGREES
 func _process(delta):
-	self.text = "Angle: " + String(stepify(-pendulum.phi * 180 / PI,0.01)) + " °"
+	text = "Angle: " + String(stepify(-pendulum.phi * 180 / PI,0.01)) + " °"

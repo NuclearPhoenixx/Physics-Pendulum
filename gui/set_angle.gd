@@ -7,6 +7,6 @@ onready var main = get_tree().get_root().get_node("Node2D")
 func _on_Angle_text_entered(new_text):
 	var a = - float(new_text) * PI / 180
 	pendulum.phi = a
-	pendulum.updatePhi(a)
+	pendulum.updatePhi()
 	
 	main.saveConfig("phi_0", a)

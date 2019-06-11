@@ -4,4 +4,4 @@ onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pe
 
 # UPDATE ANGULAR VELOCITY OF THE PENDULUM
 func _process(delta):
-	self.text = "Angular velocity: " + String(stepify(-pendulum.phi_first,0.01)) + " rad/s"
+	text = "Angular velocity: " + String(stepify(-pendulum.phi_first,0.01)) + " rad/s"

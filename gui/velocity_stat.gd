@@ -4,4 +4,4 @@ onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pe
 
 # UPDATE VELOCITY OF THE PENDULUM TIP
 func _process(delta):
-	self.text = "Tip velocity: " + String(stepify(-pendulum.phi_first * pendulum.L,0.01)) + " m/s"
+	text = "Tip velocity: " + String(stepify(-pendulum.phi_first * pendulum.L,0.01)) + " m/s"
