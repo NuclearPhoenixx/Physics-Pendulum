@@ -10,11 +10,13 @@ func update_graph():
 	var i = 0
 	
 	while i < get_point_count(): #re-draw all points with time
-		set_point_position(i, get_point_position(i) + Vector2(-speed,0))
-		
+		var position = get_point_position(i) + Vector2(-speed,0) #compute new t coordinate
 		var window = OS.window_size.x - 30
-		if abs(get_point_position(i).x) > window: #remove all points outside of the window - garbage collection
+		
+		if abs(position.x) > window: #remove all points outside of the window - garbage collection
 			remove_point(i)
+		else:
+			set_point_position(i, position)
 		
 		i += 1
 
