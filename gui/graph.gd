@@ -20,10 +20,12 @@ func update_graph():
 		
 		i += 1
 
-# UPDATE THE GRAPH EACH FRAME WITH NEW DATA
+# MOVE THE GRAPH EACH FRAME TO THE LEFT
 func _physics_process(delta):
 	update_graph() #re-draw the graph
-	
+
+# ADD NEW DATA POINTS EVERY TIMER INTERVAL TO PREVENT LAG
+func _on_Timer_timeout():
 	var factor = 100 / (2 * abs(float(amplitude.text) * PI / 180)) #compute factor so that graph is same size for every amplitude
 	var new_point = Vector2(0, pendulum.phi * factor) #update point position with new data
 	add_point(new_point)

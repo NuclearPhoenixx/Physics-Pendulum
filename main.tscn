@@ -100,7 +100,6 @@ margin_right = 116.0
 margin_bottom = 108.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CtrlHUD/Buttons"]
-editor/display_folded = true
 margin_right = 116.0
 margin_bottom = 20.0
 
@@ -225,10 +224,18 @@ margin_top = -55.0
 
 [node name="Graph" type="Line2D" parent="Container"]
 width = 2.0
-default_color = Color( 0.231373, 0.356863, 1, 1 )
+default_color = Color( 1, 0.843137, 0, 1 )
 texture_mode = 1063256064
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
 script = ExtResource( 13 )
+
+[node name="Timer" type="Timer" parent="Container"]
+wait_time = 0.1
+autostart = true
 [connection signal="text_entered" from="CtrlHUD/Settings/Angle" to="CtrlHUD/Settings/Angle" method="_on_Angle_text_entered"]
 [connection signal="text_entered" from="CtrlHUD/Settings/Length" to="CtrlHUD/Settings/Length" method="_on_Length_text_entered"]
 [connection signal="text_entered" from="CtrlHUD/Settings/Velocity" to="CtrlHUD/Settings/Velocity" method="_on_Velocity_text_entered"]
 [connection signal="text_entered" from="CtrlHUD/Settings/Damp" to="CtrlHUD/Settings/Damp" method="_on_Damp_text_entered"]
+[connection signal="timeout" from="Container/Timer" to="Container/Graph" method="_on_Timer_timeout"]
