@@ -9,4 +9,4 @@ func _on_Angle_text_entered(new_text):
 	pendulum.phi = a
 	pendulum.updatePhi()
 	
-	main.saveConfig("phi_0", a)
+	main.saveConfig("PHI_0", a)

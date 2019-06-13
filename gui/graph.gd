@@ -3,14 +3,14 @@ extends Line2D
 onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pendulum")
 onready var amplitude = get_tree().get_root().get_node("Node2D/CtrlHUD/Settings/Angle")
 
-var speed = 0.5 #moving speed of the graph
+var SPEED = 0.5 #moving speed of the graph
 
 # RE-DRAW THE WHOLE GRAPH
 func update_graph():
 	var i = 0
 	
 	while i < get_point_count(): #re-draw all points with time
-		var position = get_point_position(i) + Vector2(-speed,0) #compute new t coordinate
+		var position = get_point_position(i) + Vector2(-SPEED,0) #compute new t coordinate
 		var window = OS.window_size.x - 30
 		
 		if abs(position.x) > window: #remove all points outside of the window - garbage collection

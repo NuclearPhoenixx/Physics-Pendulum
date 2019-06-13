@@ -2,4 +2,4 @@ extends Button
 
 # RESET THE SCENE
 func _pressed():
-	get_tree().change_scene("res://main.tscn")
+	get_tree().reload_current_scene()
