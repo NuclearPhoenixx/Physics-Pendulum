@@ -2,6 +2,8 @@
 
 This simulation solves the accurate differential equation for a simple (mathematical) pendulum numerically in earth's field of gravity. Made with Godot Engine (no physics engine involved).
 
+A video by 3Blue1Brown about differential equations inspired me to create this project. Have a look at the video on Youtube: https://www.youtube.com/watch?v=p_di4Zn4wz4 It's really nice to watch!
+
 ---
 
 The mass and moment of inertia of the pendulum are neglected and no small angle approximations are involved. We don't do that here. This leads to the following equation, which of course is a harmonic oscillator:
@@ -20,4 +22,4 @@ On the top left corner you can also find some stats to your pendulum motion such
 
 ---
 
-_This should run in pretty much any browser, but if it doesn't try to download the source code and give it a try in Godot OR create an issue._
+Note: This should run in pretty much any browser, but if it doesn't try to download the source code and give it a try in Godot OR create an issue.
