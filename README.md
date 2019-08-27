@@ -1,4 +1,4 @@
-# Oscillator-Pendulum
+# Physics-Pendulum
 
 This simulation solves the accurate differential equation for a simple (mathematical) pendulum numerically in earth's field of gravity. Made with Godot Engine (no physics engine involved).
 
