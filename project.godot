@@ -23,10 +23,17 @@ config/icon="res://icon.png"
 
 window/dpi/allow_hidpi=true
 
+[physics]
+
+2d/thread_model=2
+2d/thread_model.HTML5=1
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=1
+threads/thread_model=2
 environment/default_clear_color=Color( 0.164706, 0.164706, 0.164706, 1 )
 environment/default_environment="res://default_env.tres"
+threads/thread_model.HTML5=1
