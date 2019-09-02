@@ -15,8 +15,8 @@
 [ext_resource path="res://gui/graph.gd" type="Script" id=13]
 
 [sub_resource type="Gradient" id=1]
-offsets = PoolRealArray( 0, 0.97351, 1 )
-colors = PoolColorArray( 0.87451, 1, 0, 1, 0.994183, 0.558707, 0, 1, 1, 0.537255, 0, 1 )
+offsets = PoolRealArray( 0, 0.97351 )
+colors = PoolColorArray( 0.87451, 1, 0, 1, 0.996078, 0.556863, 0, 1 )
 
 [sub_resource type="StyleBoxEmpty" id=2]
 
@@ -50,6 +50,7 @@ default_color = Color( 1, 0.984314, 0.0470588, 1 )
 gradient = SubResource( 1 )
 texture_mode = 1063256064
 script = ExtResource( 2 )
+weight_color = Color( 0.996078, 0.556863, 0, 1 )
 
 [node name="StatHUD" type="VBoxContainer" parent="."]
 editor/display_folded = true
