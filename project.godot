@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="2D-Pendulum"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scene/main.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -35,5 +35,4 @@ quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=1
 threads/thread_model=2
 environment/default_clear_color=Color( 0.164706, 0.164706, 0.164706, 1 )
-environment/default_environment="res://default_env.tres"
 threads/thread_model.HTML5=1
