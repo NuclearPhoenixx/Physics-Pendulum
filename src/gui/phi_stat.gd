@@ -1,6 +1,6 @@
 extends Label
 
-onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pendulum")
+onready var pendulum = get_tree().get_root().get_node("Main/CenterContainer/Pendulum")
 
 # UPDATE ANGLE OF PHI IN DEGREES
 func _process(delta):

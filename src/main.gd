@@ -6,11 +6,12 @@ var PATH = "user://settings.cfg"
 var SECTION = "Initial Values"
 
 # GET NODES INIT
-onready var angleSet = get_node("CtrlHUD/Settings/Angle")
-onready var LengthSet = get_node("CtrlHUD/Settings/Length")
-onready var VelocitySet = get_node("CtrlHUD/Settings/Velocity")
-onready var DampSet = get_node("CtrlHUD/Settings/Damp")
-onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pendulum")
+onready var Settings = get_node("ControlGUI/Settings")
+onready var AngleSet = Settings.get_node("Angle")
+onready var LengthSet = Settings.get_node("Length")
+onready var VelocitySet = Settings.get_node("Velocity")
+onready var DampSet = Settings.get_node("Damp")
+onready var Pendulum = get_node("CenterContainer/Pendulum")
 
 # STANDARD VARIABLES
 var PHI = PI / 2 #starting angle of the pendulum
@@ -27,15 +28,15 @@ func _ready():
 	var c = config.get_value(SECTION, "V_0", V_0)
 	var d = config.get_value(SECTION, "GAMMA", GAMMA)
 	
-	angleSet.text = String(stepify(- a * 180 / PI, 0.01))
-	pendulum.phi = a
+	AngleSet.text = String(stepify(- a * 180 / PI, 0.01))
+	Pendulum.phi = a
 	LengthSet.text = String(b)
-	pendulum.l = b
-	pendulum.updatePhi()
+	Pendulum.l = b
+	Pendulum.updatePhi()
 	VelocitySet.text = String(c)
-	pendulum.phi_first = - c / pendulum.l
+	Pendulum.phi_first = - c / Pendulum.l
 	DampSet.text = String(d)
-	pendulum.gamma = d
+	Pendulum.gamma = d
 
 # SAVE A VALUE TO THE CONFIG
 func saveConfig(key, value):

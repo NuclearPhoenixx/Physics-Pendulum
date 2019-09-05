@@ -1,7 +1,8 @@
 extends Line2D
 
-onready var pendulum = get_tree().get_root().get_node("Node2D/CenterContainer/Pendulum")
-onready var amplitude = get_tree().get_root().get_node("Node2D/CtrlHUD/Settings/Angle")
+onready var main = get_tree().get_root().get_node("Main")
+onready var pendulum = main.get_node("CenterContainer/Pendulum")
+onready var amplitude = main.get_node("ControlGUI/Settings/Angle")
 
 var SPEED = 0.5 #moving speed of the graph
 

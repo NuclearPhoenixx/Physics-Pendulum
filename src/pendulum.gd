@@ -8,8 +8,8 @@ var l = 2 #length of the pendulum; 1/100 of the pendulum graphic
 var g = 9.81 #m/s^2, gravitational acceleration
 var gamma = 0.1 #damping ratio to take friction into account
 
-export(Color) var weight_color = Color(1,1,1,1)
-export(int) var weight_radius = 8
+export(Color) var WEIGHT_COLOR = Color(1,1,1,1)
+export(int) var WEIGHT_RADIUS = 8
 var new_vector = Vector2()
 
 # INIT FUNCTION
@@ -18,7 +18,7 @@ func _ready():
 
 # DRAW THE PENDULUM WEIGHTED TIP
 func _draw():
-	draw_circle(new_vector, weight_radius, weight_color)
+	draw_circle(new_vector, WEIGHT_RADIUS, WEIGHT_COLOR)
 
 # FUNCTION TO UPDATE PHI
 func updatePhi(a=phi):
