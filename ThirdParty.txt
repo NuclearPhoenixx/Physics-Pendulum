@@ -10,3 +10,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 
 Portions of this software are copyright © 2019 The FreeType Project (www.freetype.org). All rights reserved.
+
+
+Icons
+
+Favicon by Icons8 (https://icons8.com/)
