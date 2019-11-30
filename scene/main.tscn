@@ -55,7 +55,7 @@ margin_right = 40.0
 margin_bottom = 68.0
 
 [node name="Time" type="Label" parent="StatHUD"]
-margin_right = 63.0
+margin_right = 59.0
 margin_bottom = 14.0
 text = "Time: 0 s"
 script = ExtResource( 3 )
@@ -63,7 +63,7 @@ script = ExtResource( 3 )
 [node name="Angle" type="Label" parent="StatHUD"]
 pause_mode = 2
 margin_top = 18.0
-margin_right = 63.0
+margin_right = 59.0
 margin_bottom = 32.0
 text = "phi"
 script = ExtResource( 4 )
@@ -71,7 +71,7 @@ script = ExtResource( 4 )
 [node name="Velocity" type="Label" parent="StatHUD"]
 pause_mode = 2
 margin_top = 36.0
-margin_right = 63.0
+margin_right = 59.0
 margin_bottom = 50.0
 text = "v"
 script = ExtResource( 5 )
@@ -79,7 +79,7 @@ script = ExtResource( 5 )
 [node name="AngularV" type="Label" parent="StatHUD"]
 pause_mode = 2
 margin_top = 54.0
-margin_right = 63.0
+margin_right = 59.0
 margin_bottom = 68.0
 text = "w"
 script = ExtResource( 6 )
@@ -205,7 +205,7 @@ margin_left = -15.0
 margin_top = -55.0
 
 [node name="Graph" type="Line2D" parent="Container"]
-width = 2.0
+width = 1.5
 default_color = Color( 1, 0.843137, 0, 1 )
 texture_mode = 1063256064
 joint_mode = 2
@@ -214,7 +214,7 @@ end_cap_mode = 2
 script = ExtResource( 16 )
 
 [node name="Timer" type="Timer" parent="Container"]
-wait_time = 0.1
+wait_time = 0.08
 autostart = true
 [connection signal="text_entered" from="ControlGUI/Settings/Angle" to="ControlGUI/Settings/Angle" method="_on_Angle_text_entered"]
 [connection signal="text_entered" from="ControlGUI/Settings/Length" to="ControlGUI/Settings/Length" method="_on_Length_text_entered"]
