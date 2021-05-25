@@ -213,6 +213,7 @@ script = ExtResource( 16 )
 [node name="Timer" type="Timer" parent="Container"]
 wait_time = 0.08
 autostart = true
+
 [connection signal="text_entered" from="ControlGUI/Settings/Angle" to="ControlGUI/Settings/Angle" method="_on_Angle_text_entered"]
 [connection signal="text_entered" from="ControlGUI/Settings/Length" to="ControlGUI/Settings/Length" method="_on_Length_text_entered"]
 [connection signal="text_entered" from="ControlGUI/Settings/Velocity" to="ControlGUI/Settings/Velocity" method="_on_Velocity_text_entered"]
