@@ -4,6 +4,8 @@ This simulation solves the accurate differential equation for a simple (mathemat
 
 A video by 3Blue1Brown about differential equations inspired me to create this project. Have a look at the video on Youtube: https://www.youtube.com/watch?v=p_di4Zn4wz4 It's really nice to watch!
 
+**This app is also available as a progressive web app. You can install it in Chrome and other Chromium-based browsers!**
+
 ---
 
 The mass and moment of inertia of the pendulum are neglected and no small angle approximations are involved. We don't do that here. This leads to the following equation, which of course is a harmonic oscillator:
