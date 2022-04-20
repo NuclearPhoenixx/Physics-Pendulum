@@ -14,7 +14,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="2D-Pendulum"
+config/name="2D Pendulum Simulation"
 run/main_scene="res://scene/main.tscn"
 config/icon="res://icon.png"
 
