@@ -1,10 +1,10 @@
 # Physics-Pendulum
 
+**This app is also available as a progressive web app. You can install it in Chrome and other Chromium-based browsers!**
+
 This simulation solves the accurate differential equation for a simple (mathematical) pendulum numerically in earth's field of gravity. Made with Godot Engine 3.x (no physics engine involved).
 
 A video by 3Blue1Brown about differential equations inspired me to create this project. Have a look at the video on Youtube: https://www.youtube.com/watch?v=p_di4Zn4wz4 It's really nice to watch!
-
-**This app is also available as a progressive web app. You can install it in Chrome and other Chromium-based browsers!**
 
 ---
 
